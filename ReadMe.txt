@@ -1,0 +1,1 @@
+Demonstrates the same thing ListView1 does and also includes shadow rows that can move through regular rows when they touch the title row. This allows groups to be added to lists.
