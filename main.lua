@@ -83,9 +83,9 @@ end
 display.setStatusBar( display.HiddenStatusBar ) 
 require "sqlite3"
 local id=0
-local path = system.pathForFile( "data.db", system.DocumentsDirectory )
+local path = system.pathForFile( "data.db")
 print("path="..path)
-local db = sqlite3.open( path )
+local db = sqlite3.open(path)
 
 local tablesetup = [[CREATE TABLE IF NOT EXISTS logs (id INTEGER PRIMARY KEY autoincrement, level, description, datetime);]]
 db:exec( tablesetup )
